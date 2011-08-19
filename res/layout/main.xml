@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:background="#F5F5F5"
+    >
+    <ScrollView android:layout_height="match_parent" 
+    			android:layout_width="fill_parent">
+        
+    <LinearLayout android:id="@+id/linearLayout1" 
+    		      android:layout_height="wrap_content" 
+    		      android:layout_width="fill_parent"
+    		      android:layout_marginRight="5dp"
+    			  android:layout_marginLeft="5dp"    		      
+    		      android:orientation="vertical">
+    		      
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge" 
+				  android:layout_height="wrap_content" 
+				  android:layout_width="fill_parent" 				  
+				  android:id="@+id/textView1" 
+				  android:textColor="#000000"
+				  android:textSize="24dp"
+				  android:layout_marginTop="9dp"
+				  android:shadowColor="#FFFFFF"
+				  android:shadowDx="1"
+				  android:shadowDy="1"
+				  android:shadowRadius="1"
+				  android:layout_marginBottom="9dp"				  
+				  android:text="Vintage Phone" android:typeface="serif">
+	    </TextView>
+		
+		<LinearLayout android:id="@+id/linearLayout3" 
+					  android:layout_height="wrap_content"
+					  android:layout_width="fill_parent"
+					  android:layout_marginBottom="18dp" 
+					  android:orientation="vertical" android:weightSum="1">
+			
+			<TextView android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content" 
+					  android:textAppearance="?android:attr/textAppearanceMedium" 
+					  android:textColor="#656565" android:text="Phone status: " 
+					  android:layout_marginBottom="9dp"></TextView>
+			
+			<TextView android:id="@+id/statusText" 
+				      android:layout_height="wrap_content" 
+				      android:textAppearance="?android:attr/textAppearanceMedium" 
+				      android:textColor="#464545" 
+				      android:text="Loading..." 
+				      android:layout_width="match_parent"></TextView>	
+		</LinearLayout>
+        
+	</LinearLayout>
+	</ScrollView>    
+</LinearLayout>
